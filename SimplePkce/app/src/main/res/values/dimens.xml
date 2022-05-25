@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="yellow_star">16dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="header_layout_height">120dp</dimen>
+    <dimen name="horizontal_margin">18dp</dimen>
+    <dimen name="button_padding">8dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+</resources>
