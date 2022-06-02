@@ -42,7 +42,7 @@ class ResourceFragment : Fragment() {
                 tokenInfo = it
 
                 // for each scope find the corresponding ScopeData
-                it.scope.split(" ").toTypedArray().forEach {
+                tokenInfo.scope.split(" ").toTypedArray().forEach {
                     getScopeData(requireActivity())?.forEach { sd ->
                         if (it == sd.scope) {
                             // add a button for each scope

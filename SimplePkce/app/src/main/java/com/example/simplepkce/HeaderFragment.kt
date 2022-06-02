@@ -32,7 +32,6 @@ class HeaderFragment : Fragment() {
             it.findNavController().navigate(R.id.resourceFragment)
         }
 
-
         viewModel.tokenInfo.observe(viewLifecycleOwner) { it: TokenResponse? ->
             val segments = it?.accessToken?.split(".")?.toTypedArray()
 

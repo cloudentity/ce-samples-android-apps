@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        Log.i("MainActivity", "Tapped out")
         if (item.itemId == R.id.logout) {
             viewModel.logOut()
             this.findNavController(R.id.mainNavHostFragment).navigate(R.id.titleFragment)
