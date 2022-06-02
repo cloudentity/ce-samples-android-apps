@@ -8,7 +8,7 @@ A more detailed explanation is available at [App Dev Tutorials](https://develope
 ## Prerequisites
  - [Cloudentity account](https://authz.cloudentity.io/register)
  - [Workspace and Client application prepared for PKCE](https://docs.authorization.cloudentity.com/features/oauth/grant_flows/auth_code_with_pkce/?q=pkce)
- - [Android SDK](https://www.android.com/) SDK 26+
+ - [Android SDK 26+](https://www.android.com/) 
  
 ## Running the sample application
  - Clone the repository
