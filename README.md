@@ -1,5 +1,5 @@
 
-# Android Application using PKCE & Cloudentity platform
+# Android Application using PKCE & Cloudentity Platform
 
 This sample Android application obtains an access token from [Cloudentity platform](https://cloudentity.com/) using Authorization Code grant and PKCE. 
 
