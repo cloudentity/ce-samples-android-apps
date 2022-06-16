@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Authorize</string>
+    <string name="welcome_text">Welcome!</string>
+    <string name="login_button_title">Login</string>
+</resources>

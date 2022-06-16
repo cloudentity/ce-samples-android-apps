@@ -89,7 +89,7 @@ class TitleFragment : Fragment() {
                 stopLoading()
                 try {
                     val jObjError = JSONObject(response.errorBody()!!.string())
-                    Log.i(TAG, "Error detail ${jObjError}")
+                    Log.i(TAG, "Error detail $jObjError")
                     val errView = this.view?.findViewById<TextView>(R.id.errTextView)
                     errView?.findViewById<TextView>(R.id.errTextView)?.text  = "${jObjError["error_description"]} because ${jObjError["cause"]}"
                     errView?.findViewById<TextView>(R.id.errTextView)?.isVisible = true
