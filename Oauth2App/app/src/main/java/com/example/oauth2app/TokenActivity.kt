@@ -1,12 +1,11 @@
-package com.example.authorize
+package com.example.oauth2app
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
-
 
 class TokenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class TokenActivity : AppCompatActivity() {
             // The payload is passed via intent. Verify it isn't empty and display it.
             val extra = intent.extras?.get(getString(R.string.payload)) as String
             if (extra.isEmpty()) {
-                idTokenTextView.text = getString(R.string.failed_token_obtain)
+                idTokenTextView.text = "Failed to obtain token"
                 return
             }
 

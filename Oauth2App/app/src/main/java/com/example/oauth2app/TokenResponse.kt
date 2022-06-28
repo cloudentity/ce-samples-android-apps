@@ -1,8 +1,7 @@
-package com.example.authorize
+package com.example.oauth2app
 
 import com.google.gson.annotations.SerializedName
 
-// TokenResponse as expected from calling the /token endpoint.
 data class TokenResponse(
     @SerializedName("access_token")
     val accessToken: String,

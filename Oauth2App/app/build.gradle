@@ -7,8 +7,8 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.authorize"
-        minSdk 30
+        applicationId "com.example.oauth2app"
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"

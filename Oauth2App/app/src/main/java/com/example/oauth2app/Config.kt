@@ -1,4 +1,4 @@
-package com.example.authorize
+package com.example.oauth2app
 
 object Config {
     const val AUTHORIZE_ENDPOINT = "<authorize endpoint for your Cloudentity client application>"

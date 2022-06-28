@@ -1,15 +1,15 @@
-package com.example.authorize
+package com.example.oauth2app
 
 import android.content.Intent
 import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabsIntent
-import com.example.authorize.Config.CLIENT_ID
-import com.example.authorize.Config.GRANT_TYPE
-import com.example.authorize.Config.REDIRECT_URI
-import com.example.authorize.Config.TOKEN_ENDPOINT
+import com.example.oauth2app.Config.CLIENT_ID
+import com.example.oauth2app.Config.GRANT_TYPE
+import com.example.oauth2app.Config.REDIRECT_URI
+import com.example.oauth2app.Config.TOKEN_ENDPOINT
 import com.google.gson.Gson
 import okhttp3.FormBody
 import okhttp3.OkHttpClient
@@ -17,9 +17,7 @@ import okhttp3.Request
 import okhttp3.RequestBody
 import java.net.URLEncoder
 
-
 class LoginActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -41,7 +39,14 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    // Check for a valid code in the query params or an error.
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        if (intent != null) {
+            val callbackURI = Uri.parse(intent.toString())
+            handleCallback(callbackURI)
+        }
+    }
+
     private fun handleCallback(uri: Uri) {
         val code = uri.getQueryParameter("code")
         if (code?.isEmpty() == false) {
@@ -49,7 +54,6 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    // Call the token endpoint.
     private fun getToken(code: String) {
         val client = OkHttpClient()
         /* Previously we sent the code challenge. Now we send the code verifier used
@@ -101,16 +105,4 @@ class LoginActivity : AppCompatActivity() {
         }.start()
     }
 
-    /* When the user finished signing in and accepting/rejecting consent
-       the application will be called, via the redirect URI we created,
-       and the intent will include the redirect URI with an error or authorization code.
-  */
-    override fun onNewIntent(intent: Intent?) {
-        super.onNewIntent(intent)
-        if (intent != null) {
-            val callbackURI = Uri.parse(intent.toString())
-            handleCallback(callbackURI)
-        }
-    }
 }
-

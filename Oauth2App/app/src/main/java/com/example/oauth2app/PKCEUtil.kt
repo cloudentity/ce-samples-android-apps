@@ -1,4 +1,4 @@
-package com.example.simplepkce.util
+package com.example.oauth2app
 
 import java.io.UnsupportedEncodingException
 import java.security.MessageDigest
@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException
 import java.security.SecureRandom
 import java.util.*
 
-object PKCEHelper {
+object PKCEUtil {
 
     private var verifier = ""
 

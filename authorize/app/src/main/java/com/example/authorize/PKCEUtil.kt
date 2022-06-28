@@ -1,12 +1,14 @@
-package com.example.simplepkce.util
+package com.example.authorize
 
+import com.google.gson.GsonBuilder
+import com.google.gson.JsonParser
 import java.io.UnsupportedEncodingException
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
 import java.security.SecureRandom
 import java.util.*
 
-object PKCEHelper {
+object PKCEUtil {
 
     private var verifier = ""
 
@@ -36,3 +38,4 @@ object PKCEHelper {
         return Base64.getUrlEncoder().withoutPadding().encodeToString(digest)
     }
 }
+

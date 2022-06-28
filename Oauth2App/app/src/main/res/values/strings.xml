@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Oauth2App</string>
+    <string name="payload" />
+</resources>
