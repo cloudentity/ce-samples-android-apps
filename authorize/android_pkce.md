@@ -49,7 +49,7 @@ Check out the below github repo for complete source code of the reference applic
 
 ## Building the Android Application
 
-We will be using AndroidStudio for the IDE and instructions assume that the IDE is AndroidStudio. The code for the application we are building is available [here]().
+We will be using AndroidStudio for the IDE and instructions assume that the IDE is AndroidStudio. The code for the application we are building is available [here](https://github.com/cloudentity/ce-samples-android-apps).
 
 Open AndroidStudio and create a new project with an Empty Activity. The tutorial assumes the name of the app is `authorize` but feel free to name the project whatever you like and ensure that the language is set to Kotlin and the `Minimum SDK` is set to `API 26: Android 8.0 (Oreo)` or higher.
 
