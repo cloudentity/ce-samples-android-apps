@@ -3,7 +3,7 @@
 
 This sample Android application obtains an access token from [Cloudentity platform](https://cloudentity.com/) using Authorization Code grant and PKCE.
 
-A more detailed explanation is available at [App Dev Tutorials](https://developer.cloudentity.com/app_dev_tutorials/android_pkce/)
+A more detailed explanation is available at [App Dev Tutorials](https://developer.cloudentity.com/app_dev_tutorials/android/android_pkce_tutorial/)
 
 ## Prerequisites
  - [Cloudentity account](https://authz.cloudentity.io/register)
