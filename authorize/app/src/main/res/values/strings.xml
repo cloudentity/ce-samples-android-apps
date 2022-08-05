@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Authorize</string>
+    <string name="welcome_text">Welcome!</string>
+    <string name="login_button_title">Login</string>
+    <string name="logout">Logout</string>
+    <string name="failed_token_obtain">Failed to obtain token</string>
+    <string name="obtained_token">You have obtained an access token!</string>
+    <string name="payload">payload</string>
+</resources>
