@@ -17,7 +17,6 @@ A more detailed explanation is available at [App Dev Tutorials](https://develope
    - TOKEN_ENDPOINT - token endpoint for your Cloudentity client application
    - CLIENT_ID - client ID for your Cloudentity client application
    - REDIRECT_URI - "oauth://simple-pkce.example.com" // if edited, update your Cloudentity client application redirect_uri
-    const val GRANT_TYPE = "authorization_code"
  - Run the application in AndroidStudio(or your preferred IDE)
 
 
